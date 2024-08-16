@@ -1,0 +1,12 @@
+.chests {
+  display: flex;
+}
+
+.chests img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  transform: scale(0.5);
+}
