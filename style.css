@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.chests {
-  /* width: 394px; */
-}
-
 .chests .container {
   width: 394px;
   background-color: plum;
@@ -14,10 +10,17 @@
 
 .chests img {
   width: 100%;
-  /* height: 80px; */
 }
 
 .prev,
 .next {
   transform: scale(0.5);
+}
+
+.current {
+  transform: scale(1.8);
+}
+
+.chests button {
+  margin-top: 80px;
 }
