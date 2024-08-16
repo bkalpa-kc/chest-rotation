@@ -1,8 +1,8 @@
 // Define the image URLs for each type
 const imagePaths = {
-  Common: 'Common_chest.webp',
-  Rare: 'Rare_chest.webp',
-  Epic: 'Epic_chest.webp',
+  Common: 'images/Common_chest.webp',
+  Rare: 'images/Rare_chest.webp',
+  Epic: 'images/Epic_chest.webp',
 };
 
 // Array of types
