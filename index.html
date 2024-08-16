@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="common current">Common</p>
+    <p class="rare">Rare</p>
+    <p class="common">Common</p>
+    <p class="epic">Epic</p>
+    <p class="common">Common</p>
+    <p class="common">Common</p>
+    <p class="rare">Rare</p>
+    <p class="common">Common</p>
+    <p class="rare">Rare</p>
+    <p class="rare">Rare</p>
+
+    Common, Rare, Common, Epic, Common, Common, Rare, Common, Rare, Rare
+
+    <button id="next-btn">Next</button>
+
+    <style>
+      .current {
+        border: 1px solid black;
+      }
+    </style>
+
+    <script>
+      document
+        .getElementById('next-btn')
+        .addEventListener('click', function () {
+          // Get all <p> elements
+          const paragraphs = Array.from(document.querySelectorAll('p'));
+          // Find the index of the current element
+          const currentIndex = paragraphs.findIndex((p) =>
+            p.classList.contains('current')
+          );
+
+          // Remove 'current' class from the current element
+          if (currentIndex !== -1) {
+            paragraphs[currentIndex].classList.remove('current');
+
+            // Determine the next index, looping back to 0 if at the end
+            const nextIndex = (currentIndex + 1) % paragraphs.length;
+
+            // Add 'current' class to the next element
+            paragraphs[nextIndex].classList.add('current');
+          }
+        });
+    </script>
+  </body>
+</html>
