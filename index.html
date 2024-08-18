@@ -11,35 +11,52 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
-    <div class="chests">
-      <div class="container text-center py-5">
-        <div class="row">
-          <div class="col-4">
-            <div class="prev">
-              <img id="prev-img" src="" alt="Previous" />
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="current">
+    <section class="chests">
+      <div class="container py-5">
+        <div class="prev py-2">
+          <h5 class="mb-3">Previous Chests</h5>
+          <img id="prev-img3" src="" alt="Previous" />
+          <img id="prev-img2" class="mx-2" src="" alt="Previous" />
+          <img id="prev-img" src="" alt="Previous" />
+        </div>
+
+        <div class="current py-2 mt-3">
+          <h5 class="mb-3">Current Chest</h5>
+          <div class="row align-items-center">
+            <div class="col-6">
               <img id="current-img" src="" alt="Current" />
             </div>
-          </div>
-          <div class="col-4">
-            <div class="next">
-              <img id="next-img" src="" alt="Next" />
+            <div class="col-6 text-end">
+              <button
+                class="border-0 bg-info text-white text-uppercase fw-semibold"
+                id="prev-btn"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button
+                class="border-0 bg-info text-white text-uppercase fw-semibold"
+                id="next-btn"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
-        <button
-          class="px-3 py-2 border-0 bg-info text-white text-uppercase fw-semibold w-100"
-          id="next-btn"
-        >
-          Next
-        </button>
+
+        <div class="next py-2 mt-3">
+          <h5 class="mb-3">Upcoming Chests</h5>
+          <img id="next-img" src="" alt="Next" />
+          <img id="next-img2" class="mx-2" src="" alt="Next2" />
+          <img id="next-img3" src="" alt="Next3" />
+        </div>
       </div>
-    </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
