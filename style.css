@@ -6,7 +6,15 @@
 
 .chests .container {
   width: 394px;
-  background-color: #f7f7f7;
+  background-color: #df96af;
+}
+
+.logo {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  width: 120px !important;
 }
 
 .chests img {
