@@ -24,6 +24,7 @@
 
 .current {
   border-top: 1px solid gray;
+  position: relative;
 }
 
 .current img {
@@ -33,6 +34,12 @@
 
 .current button {
   padding: 9px 12px;
+}
+
+#array-progress {
+  position: absolute;
+  top: 20px;
+  right: 28px;
 }
 
 .next {
